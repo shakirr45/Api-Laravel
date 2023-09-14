@@ -8,8 +8,7 @@ use App\Http\Controllers\getDbApiController;
 use App\Http\Controllers\postApiController;
 use App\Http\Controllers\putApiController;
 use App\Http\Controllers\deleteApiController;
-
-
+use App\Http\Controllers\searchApiController;
 
 
 
@@ -42,5 +41,10 @@ Route::put('puturl' , [putApiController::class, 'update']);
 
 ///Delete Api by using {postman}========================>>
 Route::delete('deleteturl/{id}' , [deleteApiController::class, 'delete']);
+
+///Search Api by using {postman}========================>>
+Route::get('searchurl/{name}' , [searchApiController::class, 'search']);
+
+
 
 
