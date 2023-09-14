@@ -7,6 +7,8 @@ use App\Http\Controllers\makeFirstApiController;
 use App\Http\Controllers\getDbApiController;
 use App\Http\Controllers\postApiController;
 use App\Http\Controllers\putApiController;
+use App\Http\Controllers\deleteApiController;
+
 
 
 
@@ -38,8 +40,7 @@ Route::post('posturl' , [postApiController::class, 'add']);
 ///Put Api by using {postman}========================>>
 Route::put('puturl' , [putApiController::class, 'update']);
 
-
-///////Shamiur rahmsn ahkei
-
+///Delete Api by using {postman}========================>>
+Route::delete('deleteturl/{id}' , [deleteApiController::class, 'delete']);
 
 
