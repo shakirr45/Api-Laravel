@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-//Db----->
+//Db connection with Models----->
 use App\Models\Device;
 
 class getDbApiController extends Controller
