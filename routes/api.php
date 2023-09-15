@@ -9,6 +9,10 @@ use App\Http\Controllers\postApiController;
 use App\Http\Controllers\putApiController;
 use App\Http\Controllers\deleteApiController;
 use App\Http\Controllers\searchApiController;
+use App\Http\Controllers\validationController;
+use App\Http\Controllers\resourceController;
+
+
 
 
 
@@ -44,6 +48,14 @@ Route::delete('deleteturl/{id}' , [deleteApiController::class, 'delete']);
 
 ///Search Api by using {postman}========================>>
 Route::get('searchurl/{name}' , [searchApiController::class, 'search']);
+
+///Validation Api by using {postman}========================>>
+Route::post('validatonhurl' , [validationController::class, 'testData']);
+
+///Api with Resource by using {postman}========================>>
+
+Route::apiResource('resourceurl' , resourceController::class);
+
 
 
 
