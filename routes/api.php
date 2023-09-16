@@ -11,6 +11,8 @@ use App\Http\Controllers\deleteApiController;
 use App\Http\Controllers\searchApiController;
 use App\Http\Controllers\validationController;
 use App\Http\Controllers\resourceController;
+use App\Http\Controllers\apiUploadFileController;
+
 
 
 
@@ -55,6 +57,11 @@ Route::post('validatonhurl' , [validationController::class, 'testData']);
 ///Api with Resource by using {postman}========================>>
 
 Route::apiResource('resourceurl' , resourceController::class);
+
+///Validation Api by using {postman and when select a file put the same name as key as controller} (storage/app/apiDocs in file )========================>>
+Route::post('uploadurl' , [apiUploadFileController::class, 'uploadData']);
+
+
 
 
 
